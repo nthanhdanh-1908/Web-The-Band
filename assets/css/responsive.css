@@ -1,0 +1,161 @@
+/* MOBILE & TABLET */
+@media (max-width: 1023px) {
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023) {
+	.contact-content {
+		margin: 0 32px;
+	}
+	.tour_dates-card {
+		padding-bottom: 16px;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 739px) {
+	.search-btn {
+		display: none;
+	}
+
+	#menu-mobile {
+		display: block;
+	}
+
+	.submenu-mobile-list {
+		display: none;
+		width: 100%;
+		height: 100vh;
+	}
+	
+	.submenu-mobile-item {
+		height: 48px;
+		width: 100%;
+		color: #fff;
+		background-color: #000;
+	}
+	
+	.submenu-mobile-link {
+		display: block;
+		line-height: 48px;
+		color: #fff;
+		height: 100%;
+		font-size: 16px;
+		padding-left: 24px;
+	}
+	
+	.submenu-mobile-link:hover {
+		background-color: #ccc;
+		color: #000;
+	}
+
+	.menu-mobile-icon {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: inline-block;
+		padding: 16px;
+		color: #fff;
+	}
+
+	.menu-mobile-checkbox {
+		display: inline;
+		position: absolute;
+		right: 0;
+    bottom: 0px;
+    height: 100%;
+    width: 50px;
+		opacity: 0;
+	}
+
+	.menu-mobile-checkbox:checked + 
+	.submenu-mobile-list {
+		display: block;
+	}
+
+	.submenu-mobile-item {
+		height: 48px;
+		width: 100%;
+	}
+
+	.submenu-mobile-link {
+		display: block;
+		line-height: 48px;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#nav-mobile {
+		display: inline-block;
+	}
+
+	#nav-mobile li {
+	}
+
+	#nav-mobile li a {
+		display: inline-block;
+		line-height: 48px;
+		padding: 12px 24px;
+		color: #fff;
+		height: 100%;
+		line-height: 22px;
+	}
+
+	.text-content {
+		display: none;
+	}
+
+	.members {
+		flex-direction: column;
+    align-items: center;
+		padding: 30px 0 48px;
+	}
+
+	.members-card {
+		width: 100%;
+    margin-top: 18px;
+	}
+
+	.tour_dates-location {
+		display: flex;
+    flex-direction: column;
+	}
+
+	.tour_dates-card {
+		width: 100%;
+	}
+
+	.tour_dates-card:nth-child(2) {
+		margin: 16px 0 16px;
+	}
+
+	.contact-content {
+		flex-direction: column;
+	}
+
+	.contact-info-list {
+		margin-bottom: 16px;
+	}
+
+	.contact-input-info:first-child {
+		flex-direction: column;
+	}
+
+	.contact-input {
+		width: 100% ;
+	}
+
+	.contact-input:nth-child(2) {
+		margin-top: 8px;
+	}
+
+	.footer-list-icon {
+		font-size: 18px;
+	}
+
+	.copyright {
+		font-size: 15px;
+	}
+}

@@ -1,0 +1,415 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition-duration: .4s;
+}
+
+html {
+  font-family: "Lato", sans-serif;;
+}
+
+.half {
+  width: 48%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #000;
+  line-height: 22px;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:active {
+  border: 1px solid #000;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #000;
+	z-index: 1;
+}
+
+#menu-mobile,
+#nav-mobile {
+  display: none;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav .nav-arrow-down {
+  position: relative;
+  top: -1px;
+  left: 2px;
+  rotate: -90deg;
+  font-size: 14px;
+}
+
+#nav li:hover a .nav-arrow-down {
+  rotate: 0deg;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li a {
+  padding: 0 12px;
+  line-height: 38px;
+  color: #000;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+
+#header .search-icon {
+  line-height: 46px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+#slider {
+  position: relative;
+  background: url("/assets/imgs/slider\ 1.jpg") top center / cover no-repeat;
+  margin-top: 46px;
+  padding-top: 50%;
+}
+
+.text-content {
+  position: absolute;
+	bottom: 48px;
+	color: #fff;
+	/* left: 50%;	
+	transform: translateX(-50%); */
+	/* right: 0;
+	left: 0; */
+	width: 100%;
+	text-align: center;
+}
+
+.text-heading {
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.text-description {
+	font-size: 15px;
+}
+
+
+#content {
+  
+}
+
+/* Begin The Band */
+.contact,
+.tour_dates-container,
+.the_band {
+  max-width: 800px;
+  padding: 74px 16px 64px;
+  margin: 0 auto;
+}
+
+.contact-heading,
+.tour_dates-heading,
+.the_band-heading {
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.contact-slogan,
+.tour_dates-slogan,
+.the_band-slogan {
+  opacity: .6;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.the_band-para {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.members {
+  display: flex;
+  padding: 48px 0;
+}
+
+.members-card {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.members-name {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.members-img {
+  border-style: none;
+  border-radius: 4px;
+  width: 60%;
+}
+/* End The Band */
+
+/* Begin Tour Dates */
+.tour_dates {
+  background-color: #000;
+  padding-bottom: 40px;
+}
+.tour_dates-heading {
+  color: #fff;
+}
+
+.tour_dates-slogan {
+  color: #fff;
+}
+
+.tour_dates-table {
+  width: 100%;
+  background-color: #fff;
+  margin: 42px 0 32px;
+}
+
+.tour_dates-list {
+  display: block;
+  padding: 8px 16px;
+  height: 40px;
+  line-height: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tour_dates-list:last-child {
+  border: none;
+}
+
+.tour_dates-month {
+  color: #757575;
+  font-size: 15px;
+}
+
+.tour_dates-label {
+  display: inline-block;
+  background-color: #f44336;
+  color: #fff;
+  padding: 0 8px;
+  margin-left: 16px;
+}
+
+.tour_dates-quantity {
+  padding: 0 8px;
+  border-radius: 50%;
+  background-color: #000;
+  float: right;
+  color: #fff;
+}
+
+.tour_dates-location {
+  width: 100%;
+  display: flex;
+}
+
+.tour_dates-card {
+  width: 34%;
+  background-color: #fff;
+}
+
+.tour_dates-card:nth-child(2) {
+  margin: 0 16px;
+}
+
+.tour_dates-img {
+  height: 50%;
+  width: 100%;
+
+}
+
+.tour_dates-info {
+  color: #000;
+  padding: 16px;  
+
+}
+
+.tour_dates-info-name {
+  padding-bottom: 16px;
+  display: inline-block;
+}
+
+.tour_dates-info-date {
+  opacity: .6;
+}
+
+.tour_dates-info-title {
+  margin: 16px 0;
+}
+
+.tour_dates-info-buy {
+  margin-bottom: 16px;
+}
+/* End Tour Dates */
+
+/* Begin Contact */
+.contact {
+
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.contact-info-list {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.contact-info-item {
+}
+
+.contact-info-icon {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.contact-info-title:first-child {
+  margin-left: 4px;
+}
+
+.contact-input {
+}
+
+.contact-input-info:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-input-info:nth-child(2) {
+  margin-top: 8px;
+}
+
+.contact-input-info:last-child {
+  float: right;
+  margin-top: 16px;
+}
+/* End Contact */
+
+.banner {
+  height: 100vh;
+  background: url("/assets/imgs/map.jpg") center / cover no-repeat;
+}
+
+#footer {
+  padding: 80px;
+}
+
+.footer-list-app {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-list-icon {
+  margin: 3px;
+  font-size: 24px;
+  opacity: .6; 
+}
+
+.footer-list-icon:hover {
+  opacity: .3;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 16px;
+  color: #ccc;
+  font-size: 15px;
+  text-align: center;
+}
+
+.name-author {
+  text-decoration: underline;
+  color: #ccc;
+  font-size: 15px;
+}
+
