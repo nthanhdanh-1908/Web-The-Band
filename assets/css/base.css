@@ -49,6 +49,94 @@ input:active {
   border: 1px solid #000;
 }
 
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.modal-container {
+  width: 100%;
+  margin: 0 150px;
+  height: auto;
+  background-color: #000;
+}
+
+.modal-header {
+  position: relative;
+  padding: 42px 0;
+  background-color: #009688;
+}
+
+.modal-header-icon-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 16px;
+}
+
+.modal-header-icon-close:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal-heading {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.modal-footer,
+.modal-content {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.modal-content-label {
+  font-size: 15px;
+  color: #000;
+}
+
+.modal-content-input {
+  margin: 15px 0;
+}
+
+.modal-btn {
+  width: 100%;
+  background-color: #009688;
+  padding: 16px 0;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-btn-close {
+  background-color: #f44336;
+}
+
+.modal-help {
+  font-size: 15px;
+}
+
+.modal-help-link {
+  color: #2196F3;
+  text-decoration: underline;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -170,11 +258,6 @@ input:active {
 
 .text-description {
 	font-size: 15px;
-}
-
-
-#content {
-  
 }
 
 /* Begin The Band */
@@ -330,10 +413,6 @@ input:active {
 /* End Tour Dates */
 
 /* Begin Contact */
-.contact {
-
-}
-
 .contact-content {
   display: flex;
   justify-content: space-between;
@@ -345,9 +424,6 @@ input:active {
   font-size: 17px;
 }
 
-.contact-info-item {
-}
-
 .contact-info-icon {
   display: inline-block;
   margin-right: 6px;
@@ -355,9 +431,6 @@ input:active {
 
 .contact-info-title:first-child {
   margin-left: 4px;
-}
-
-.contact-input {
 }
 
 .contact-input-info:first-child {

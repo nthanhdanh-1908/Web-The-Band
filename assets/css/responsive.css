@@ -4,9 +4,14 @@
 
 /* TABLET */
 @media (min-width: 740px) and (max-width: 1023) {
+	.modal-container {
+		margin: 0 40px !important;
+	}
+
 	.contact-content {
 		margin: 0 32px;
 	}
+
 	.tour_dates-card {
 		padding-bottom: 16px;
 	}
@@ -14,6 +19,9 @@
 
 /* MOBILE */
 @media (max-width: 739px) {
+	.modal-container {
+		margin: 0 24px;
+	}
 	.search-btn {
 		display: none;
 	}
@@ -62,9 +70,9 @@
 		display: inline;
 		position: absolute;
 		right: 0;
-    bottom: 0px;
-    height: 100%;
-    width: 50px;
+		bottom: 0px;
+		height: 100%;
+		width: 50px;
 		opacity: 0;
 	}
 
@@ -89,9 +97,6 @@
 
 	#nav-mobile {
 		display: inline-block;
-	}
-
-	#nav-mobile li {
 	}
 
 	#nav-mobile li a {

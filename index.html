@@ -13,6 +13,48 @@
 	</head>
 	<body>
 		<div id="main">
+			<div class="modal">
+				<div class="modal-container">
+					<header class="modal-header">
+						<i class="modal-header-icon-close fa-solid fa-xmark"></i>
+						<h2 class="modal-heading">
+							<i class="fa-solid fa-suitcase"></i>
+							Tickets
+						</h2>
+					</header>
+	
+					<div class="modal-content">
+						<p class="modal-content-label">
+							<i class="fa-solid fa-cart-shopping"></i>
+							Tickets, $15 per person
+						</p>
+						<input class="modal-content-input" type="text" placeholder="How many?">
+						<p class="modal-content-label">
+							<i class="fa-solid fa-user"></i>
+							Send To
+						</p>
+						<input class="modal-content-input" type="email" placeholder="Enter email">
+	
+						<button class="btn modal-btn">
+							PAY
+							<i class="modal-btn-icon fa-solid fa-check"></i>
+						</button>
+					</div>
+	
+					<footer class="modal-footer">
+						<button class="btn modal-btn-close">
+							Close
+							<i class="modal-btn-close-icon fa-solid fa-xmark"></i>
+						</button>
+	
+						<p class="modal-help">
+							Need
+							<a href="#" class="modal-help-link">help?</a>
+						</p>
+					</footer>
+				</div>
+			</div>
+
 			<div id="header">
 				<!-- Begin Nav -->
 				<ul id="nav">
@@ -208,17 +250,5 @@
 				<p class="copyright">Powered by <a href="#" class="name-author">Nguyen Thanh Danh</a></p>
 			</div>
 		</div>
-		<script>
-			const items = document.querySelectorAll('.submenu-mobile-item');
-
-			items.forEach(item => {
-				item.addEventListener('click', (event) => {
-					const parent = event.target.closest('.submenu-mobile-list');
-					if (parent) {
-						parent.style.display = 'none';
-					}
-				});
-			});
-		</script>
 	</body>
 </html>
